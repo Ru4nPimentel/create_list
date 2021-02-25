@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+$fontFamily: 'Roboto', sans-serif;
+
+@mixin boxSizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+ul,
+ul,
+li,
+p,
+a {
+  margin: 0px;
+  padding: 0px;
+  @include boxSizing;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body,
+input,
+button {
+  font-family: $fontFamily;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1.readonly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.buttonFormat {
+  background: transparent;
+  border: none;
+}
+
+.boxLogo {
+  img {
+    display: block;
+  }
+}

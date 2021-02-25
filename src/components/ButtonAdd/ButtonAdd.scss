@@ -1,0 +1,31 @@
+.ButtonAdd {
+  width: 48px;
+  height: 48px;
+  background: #40d9b8;
+  border-radius: 100px;
+  display: inline-block;
+  border: transparent;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: ease 0.3s;
+  .icon_plus {
+    i {
+      background: #fff;
+      width: 24px;
+      height: 4px;
+      position: absolute;
+      top: 22px;
+      left: 13px;
+    }
+    i:first-child {
+      transform: rotate(180deg);
+    }
+    i:last-child {
+      transform: rotate(90deg);
+    }
+  }
+  &:hover {
+    background-color: #14a384;
+  }
+}
